@@ -1,5 +1,13 @@
+import { ThemeProvider } from "styled-components/native";
+
 import { Dashboard } from "@screens/Dashboard/index";
 
+import theme from "@theme/index";
+
 export default function App() {
-  return <Dashboard />;
+  return (
+    <ThemeProvider theme={theme}>
+      <Dashboard />
+    </ThemeProvider>
+  );
 }
