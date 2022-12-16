@@ -1,9 +1,9 @@
 import * as S from "./styles";
 
-export function Dashboard() {
+export function Loading() {
   return (
     <S.Container>
-      <S.Title>Dashboard</S.Title>
+      <S.LoadingIndicator />
     </S.Container>
   );
 }
