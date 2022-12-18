@@ -1,17 +1,29 @@
-import styled, { css } from "styled-components/native";
+import styled from "styled-components/native";
 
 export const Container = styled.View`
   flex: 1;
-  align-items: center;
-  justify-content: center;
 
   background-color: ${({ theme }) => theme.COLORS.GRAY_100};
+
+  padding: 50px 24px;
 `;
 
-export const Title = styled.Text`
-  ${({ theme }) => css`
-    font-size: ${theme.FONT_SIZE.XL}px;
-    font-family: ${theme.FONT_FAMILY.BOLD};
-    color: ${theme.COLORS.GRAY_700};
-  `}
+export const Header = styled.View`
+  width: 100%;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const Logo = styled.Image`
+  height: 36px;
+`;
+
+export const Avatar = styled.Image`
+  width: 40px;
+  height: 40px;
+
+  border-radius: 40px;
+  border: 2px solid ${({ theme }) => theme.COLORS.GRAY_600};
 `;
