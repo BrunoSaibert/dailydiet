@@ -9,6 +9,8 @@ type CardPercentStyleProps = {
 };
 
 export const Container = styled(TouchableOpacity)<CardPercentStyleProps>`
+  width: 100%;
+
   background-color: ${({ theme, type }) =>
     type === "PRIMARY" ? theme.COLORS.GREEN_LIGHT : theme.COLORS.RED_LIGHT};
   border-radius: 8px;

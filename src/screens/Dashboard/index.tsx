@@ -1,3 +1,4 @@
+import { Button } from "@components/Button";
 import { CardPercent } from "@components/CardPercent";
 
 import logoImg from "@assets/Logo.png";
@@ -13,6 +14,9 @@ export function Dashboard() {
       </S.Header>
 
       <CardPercent percent={0.90862} />
+
+      <S.ButtonLabel>Refeições</S.ButtonLabel>
+      <Button title="Nova refeição" icon="add" onPress={() => {}} />
     </S.Container>
   );
 }

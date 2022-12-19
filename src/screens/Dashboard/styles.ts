@@ -1,7 +1,8 @@
-import styled from "styled-components/native";
+import styled, { css } from "styled-components/native";
 
 export const Container = styled.View`
-  flex: 1;
+  width: 100%;
+  align-items: center;
 
   background-color: ${({ theme }) => theme.COLORS.GRAY_100};
 
@@ -28,4 +29,16 @@ export const Avatar = styled.Image`
 
   border-radius: 40px;
   border: 2px solid ${({ theme }) => theme.COLORS.GRAY_600};
+`;
+
+export const ButtonLabel = styled.Text`
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 8px;
+
+  ${({ theme }) => css`
+    font-size: ${theme.FONT_SIZE.MD}px;
+    font-family: ${theme.FONT_FAMILY.REGULAR};
+    color: ${theme.COLORS.GRAY_700};
+  `}
 `;
