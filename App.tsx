@@ -1,3 +1,9 @@
+import { Platform } from "react-native";
+if (Platform.OS === "android") {
+  require("intl");
+  require("intl/locale-data/jsonp/pt-BR");
+}
+
 import { ThemeProvider } from "styled-components/native";
 import {
   useFonts,
